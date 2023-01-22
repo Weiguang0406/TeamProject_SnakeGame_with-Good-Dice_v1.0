@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        html {
+            perspective: 800px
+        }
+
+        .cube {
+            width: 150px;
+            height: 150px;
+            /* background-color: #bfa; */
+            margin: 100px auto;
+
+
+            /* 设置3d变形效果 */
+            transform-style: preserve-3d;
+         /*   transform: rotateX(230deg) rotateZ(45deg);
+         */
+
+            transform: rotateX(180deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px);
+
+
+
+            animation: rotate 5s infinite linear;
+            /* transform:rotateY(45deg) scaleZ(2); */
+        }
+
+        .cube>div {
+            width: 100px;
+            height: 100px;
+            /* 为元素设置透明效果 */
+           /* opacity: 1*/;
+            position: absolute;
+        }
+
+        img {
+            width:100%;
+            height:100%;
+            vertical-align: top;
+        }
+
+        .box1 {
+ /*           transform: rotateY(90deg) translateZ(50px);
+ */
+            transform:rotateX(90deg) translateZ(50px);
+         /*   transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px) translateY(0px) translateZ(0px)
+*/
+        }
+
+        .box2 {
+/*
+            transform: rotateY(-90deg) translateZ(50px);
+*/
+           transform: rotateY(90deg) translateZ(50px);
+/*
+           transform: rotateX(0deg) rotateY(90deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(50px)
+*/
+        }
+
+        .box3 {
+            /*
+            transform: rotateX(90deg) translateZ(50px);
+*/
+
+       transform:  translateZ(50px);
+            /*
+            transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateZ(50px) translateY(0px) translateZ(0px)
+*/
+        }
+
+        .box4 {
+
+           /* transform: rotateX(-90deg) translateZ(50px);
+
+*/
+
+            transform: rotateY(-90deg) translateZ(50px);
+
+/*
+            transform: rotateX(0deg) rotateY(0deg) rotateX(0deg) translateX(50px) translateY(0px) translateZ(0px)
+*/
+
+        }
+
+        .box5 {
+
+     /*
+           transform:rotateY(180deg) translateZ(50px);
+*/
+
+ /*           transform:  translateZ(50px);
+ *
+  */
+            transform: translateZ(-50px);
+         /*   transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px) translateY(0px) translateZ(0px)
+
+*/
+        }
+
+        .box6 {
+
+         /*
+          transform: rotateY(0deg) translateZ(50px);
+*/
+/*
+             transform: rotateZ(45deg) translateZ(50px);
+
+  */
+            transform:rotateX(-90deg) translateZ(50px);
+    /*
+      transform:  rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px) translateY(0px) translateZ(0px)
+*/
+/*transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px) translateY(0px) translateZ(0px)
+  */
+        }
+
+      /*  .box7 {
+            transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0px) translateY(0px) translateZ(0px);
+            background-color: black;
+            border: 2px solid red;
+        }
+*/
+        @keyframes rotate1 {
+            form{
+                transform:rotateX(0) rotateZ(0)
+            }
+
+            to{
+                transform:rotateX(1turn) rotateZ(1turn)
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 创建一个外部的容器 -->
+    <div class="cube">
+        <!-- 引入图片 -->
+        <div class="box1">
+            <img src="imgs/dice111.png">
+        </div>
+
+        <div class="box2">
+            <img src="imgs/dice222.png">
+        </div>
+
+        <div class="box3">
+            <img src="imgs/dice333.png">
+        </div>
+
+        <div class="box4">
+            <img src="imgs/dice444.png">
+        </div>
+
+        <div class="box5">
+            <img src="imgs/dice555.png">
+        </div>
+
+        <div class="box6">
+            <img src="imgs/dice666.png">
+        </div>
+        <div class="box7">
+
+        </div>
+
+    </div>
+</body>
+
+</html>

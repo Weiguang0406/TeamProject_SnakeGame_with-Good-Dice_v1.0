@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Snake&Ladder Game</title>
+    <link href="css/board.css" rel="stylesheet" type="text/css" />
+    <link href="css/diceRolling.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!--<<<<<<<  Updated upstream -->
+    <!-- <div class="header">Testing version</div> -->
+    <div id="gameIcon">
+      <img src="imgs/snakeandladderIcon2.png" alt="" />
+    </div>
+    <div class="center">
+      <div id="gameGround">
+        <div id="div0">
+          <div id="player1">
+            <img id="player1indicator" src="./imgs/pointer1.png" alt="" /><img
+              src="imgs/avatar_body1.png"
+            />
+          </div>
+          <!-- Moved players to starting place from div1-->
+          <div id="player2">
+            <img id="player2indicator" src="./imgs/pointer1.png" alt="" /><img
+              src="imgs/avatar_body2.png"
+            />
+          </div>
+        </div>
+        <div class="gridboard">
+          <div id="div21" class="smallbox">
+            21 <img id="img_snake2" src="imgs/snake2extra.png" />
+          </div>
+          <div id="div22" class="smallbox">22</div>
+          <div id="div23" class="smallbox">
+            23 <img id="img_ladder1" src="imgs/ladder1extra.png" />
+          </div>
+          <div id="div24" class="smallbox">24</div>
+          <div id="div25" class="smallbox div25">
+            25 <img id="img_flag" src="imgs/flagextra.png" />
+          </div>
+          <div id="div20" class="smallbox div20">
+            20 <img id="img_snake1" src="imgs/snake1extra.png" />
+          </div>
+          <div id="div19" class="smallbox div19">19</div>
+          <div id="div18" class="smallbox div18">18</div>
+          <div id="div17" class="smallbox div17">17</div>
+          <div id="div16" class="smallbox div16">16</div>
+          <div id="div11" class="smallbox div11">11</div>
+          <div id="div12" class="smallbox div12">
+            12 <img id="img_snake3" src="imgs/snake3extra.png" />
+          </div>
+          <div id="div13" class="smallbox div13">13</div>
+          <div id="div14" class="smallbox div14">14</div>
+          <div id="div15" class="smallbox div15">15</div>
+          <div id="div10" class="smallbox div10">10</div>
+          <div id="div9" class="smallbox div9">9</div>
+          <div id="div8" class="smallbox div8">8</div>
+          <div id="div7" class="smallbox div7">
+            7 <img id="img_ladder2" src="imgs/ladder2extra.png" />
+          </div>
+          <div id="div6" class="smallbox div6">6</div>
+          <div id="div1" class="smallbox div1">1</div>
+          <div id="div2" class="smallbox div2">2</div>
+          <div id="div3" class="smallbox div3">3</div>
+          <div id="div4" class="smallbox div4">4</div>
+          <div id="div5" class="smallbox div5">5</div>
+        </div>
+      </div>
+      <div class="control_panel">
+        <div class="person_panel">
+          <img src="imgs/avatar1.png" />
+          <img src="imgs/avatar2.png" />
+          <!-- message place for users' turn and snake or ladders-->
+          <h2 id="message"></h2>
+          <h2 id="movingmessage"></h2>
+        </div>
+        <div class="dice_panel">
+          <div id="cube" class="cube">
+            <!-- 引入图片 -->
+            <div class="box1">
+              <img src="imgs/dice111.png" />
+            </div>
+
+            <div class="box2">
+              <img src="imgs/dice222.png" />
+            </div>
+
+            <div class="box3">
+              <img src="imgs/dice333.png" />
+            </div>
+
+            <div class="box4">
+              <img src="imgs/dice444.png" />
+            </div>
+
+            <div class="box5">
+              <img src="imgs/dice555.png" />
+            </div>
+
+            <div class="box6">
+              <img src="imgs/dice666.png" />
+            </div>
+            <div class="box7"></div>
+          </div>
+
+          <button id="rolldice_button" class="rolldice_button">
+            Roll Dice
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">🧡💛💚💙💜🤎<span>Copyright：Robert Neszt, Danli Huang, Weiguang Yang<span></span></footer>
+  </body>
+
+  <script src="js/jquery-1.10.1.js" type="text/javascript"></script>
+  <script type="text/javascript" src="js/board.js"></script>
+  <script type="text/javascript" src="js/footer.js"></script>
+  
+  </html>
